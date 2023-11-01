@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Page</title>
+  <style>
+    .login-card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .login-card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .login-card form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-card input[type="text"],
+    .login-card input[type="password"],
+    .login-card input[type="submit"] {
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Use ::placeholder pseudo-element to style the placeholders */
+    .login-card input[type="text"]::placeholder,
+    .login-card input[type="password"]::placeholder {
+      color: #999;
+    }
+
+    .login-card input[type="submit"] {
+      background-color: #ff6347;
+      color: #fff;
+      cursor: pointer;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .login-card input[type="submit"]:hover {
+      background-color: #ff4c1f;
+    }
+
+    /* Add focus styles for the input fields */
+    .login-card input[type="text"]:focus,
+    .login-card input[type="password"]:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    body{
+      background: rgb(255,99,71);
+      background: linear-gradient(90deg, rgba(255,99,71,1) 0%, rgba(251,211,63,1) 100%);
+
+
+    }
+    .login-header{
+      text-align: center;
+      font-family: Arial;
+      color:#ffb047;
+    }
+  </style>
+  <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--<form ACTION="form" method="POST">-->
+<!--  <input type="text" placeholder="Username" />-->
+<!--  <input type="password" placeholder="Password" />-->
+<!--  <input TYPE="submit" value="Log In" />-->
+<!--</form>-->
+<div class="login-card">
+  <h2 class="login-header">Buzzle</h2>
+  <form method="post" action="#" id="login_form">
+    <!-- HIDDEN FIELD FOR CAPTCHA PLATFORM CHECK -->
+    <input type="hidden" id="platform" name="platform" value="web" />
+
+    <input type="text" id="username" name="username" placeholder="Username" required>
+
+    <input type="password" id="password" name="password" placeholder="Password" required>
+
+    <!-- RECAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LfAutYlAAAAAKAd-XYfVw2lZEM-nBkYUvgLfoh8"></div>
+
+    <input type="submit" value="Login">
+  </form>
+
+  <p id="login_error_message"></p>
+</div>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='login.js'></script>
+
+</body>
+</html>
