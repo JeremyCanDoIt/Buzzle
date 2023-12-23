@@ -10,3 +10,11 @@ Login Page:
 ![image](https://github.com/JeremyCanDoIt/Buzzle/assets/105999258/a1504aa7-b8ed-4e72-a829-4a3d72a4592b)
 
 
+Search Page:
+
+![image](https://github.com/JeremyCanDoIt/Buzzle/assets/105999258/dc826696-f84c-4859-b70d-132993dce9d4)
+
+User Page:
+
+![image](https://github.com/JeremyCanDoIt/Buzzle/assets/105999258/14292cc8-a2af-406b-b2ba-ef57e9345ca7)
+
