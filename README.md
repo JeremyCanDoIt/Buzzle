@@ -6,6 +6,6 @@ Services table:
 ![image](https://github.com/JeremyCanDoIt/Buzzle/assets/105999258/5b7a5a77-d3c8-4c0f-b68d-56bc28264b7f)
 
 
-Login Page: 
+Buzzle: 
 ![image](https://github.com/JeremyCanDoIt/Buzzle/assets/105999258/a1504aa7-b8ed-4e72-a829-4a3d72a4592b)
 
